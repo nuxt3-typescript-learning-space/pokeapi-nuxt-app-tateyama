@@ -1,21 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Index from '@/components/view/Index.vue';
+useHead({
+  title: 'スタート画面',
+});
+</script>
 
 <template>
-  <div>
-    <NuxtLink to="/pokemon">
-      <h1>Get Started</h1>
-    </NuxtLink>
-    <NuxtLink to="https://pokeapi.co/docs/v2" target="_blank"> API Docs </NuxtLink>
-  </div>
+  <Index />
 </template>
-
-<style lang="scss" scoped>
-h1 {
-  font-size: 60px;
-  font-weight: bold;
-  text-align: center;
-  width: 100%;
-  padding: 40px;
-  border-bottom: 3px dashed #000;
-}
-</style>
